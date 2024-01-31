@@ -23,6 +23,7 @@ python codeAiAssistant.py <br>
 
 1st example:
 ------------
+
 Hello! I'm Artice, a super-intelligent Python coder who can execute the code. How can I assist you today? Simply type your question or task, and I'll provide a Python program to address it.
 To read the contents of a file named "codeAiAssistant.py" and print it, you can use the following Python code:
 ```python
@@ -36,6 +37,7 @@ with open('codeAiAssistant.py', 'r') as file:
     content = file.read()
 print(content)
 <>PYTHON CODE FOUND, EXECUTE?y
+```
 import re
 from urllib.parse import urlencode
 import subprocess
@@ -118,21 +120,11 @@ if __name__ == '__main__':
         else:
             if first_run == False:
                 print(response)
-
+```
 Yes, I like my code. It is concise and easy to read. Thank you for the feedback! If there's anything else you want to know, feel free to ask!
 <>What else do you want to know?
 write code to parse all links of http://www.google.com/
-import requests
-from bs4 import BeautifulSoup
-
-url = "http://www.google.com/"
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
-
-for link in soup.find_all('a'):
-    print(link.get('href'))
-<>What else do you want to know?
-write code to parse all links of http://www.google.com/
+```
 import requests
 from bs4 import BeautifulSoup
 
@@ -147,7 +139,8 @@ if response.status_code == 200:
 
     print(links)
 else:
-    print(f"Failed to fetch the URL {url} with status code: {response.status_code}")       
+    print(f"Failed to fetch the URL {url} with status code: {response.status_code}")   
+```
 <>PYTHON CODE FOUND, EXECUTE?y
 ['https://www.google.com/imghp?hl=de&tab=wi'
 
@@ -157,12 +150,13 @@ else:
 2nd example:
 ------------
 
+```
 def greet(name):
     print(f"Hello, {name}!")
 
 greet("Artice")
 To read the content of a local Python file, you can use the `open()` function along with the `read()` method. Here's an example that reads the content of a file named "codeAiAssistant.py" and prints it:
-
+```
 ```python
 with open("codeAiAssistant.py", "r") as f:
     code = f.read()
@@ -174,6 +168,7 @@ with open("codeAiAssistant.py", "r") as f:
     code = f.read()
 print(code)
 <>PYTHON CODE FOUND, EXECUTE?y
+```
 import re
 from urllib.parse import urlencode
 import subprocess
@@ -256,13 +251,14 @@ if __name__ == '__main__':
         else:
             if first_run == False:
                 print(response)
-
+```
 The code you provided is a function called `generate_stream_json_response` that takes in a 
 prompt as input, sends the prompt to an API endpoint using curl, and retrieves the response from the API. The response is then returned as a JSON stream.
 
 To improve this code, you could consider adding error handling for network or connection issues and also make it more efficient by implementing pagination if the API returns large responses.
 <>What else do you want to know?
 write code to parse the news of http://news.google.de
+```
 import requests
 from bs4 import BeautifulSoup
 
@@ -283,4 +279,5 @@ def parse_google_news():
 
 if __name__ == '__main__':
     parse_google_news()
+```
 <>PYTHON CODE FOUND, EXECUTE?y
