@@ -1,10 +1,26 @@
 # codeAiAssistant
-Pseudo self improving code AI able to execute its own code using Mistral 7B OpenHermes LLM
-Reads its own code from a local file by writing code to read its own code file and reads its code via a stdout redirection of the python code exceution.
-It the judges over its own code, if the model does not like the code it will improve the code or give you tips to improve the code
+Pseudo self improving code AI able to execute its own code using Mistral 7B OpenHermes LLM <br>
+Reads its own code from a local file by writing code to read its own code file and reads its code via a stdout redirection of the python code exceution. <br>
+It the judges over its own code, if the model does not like the code it will improve the code or give you tips to improve the code <br>
+Installation:
+------------
+Win-R <br>
+cmd <br>
+wsl.exe --install <br>
+user newUserName pwd newUserNamePassword <br>
+wsl.exe --user root -d ubuntu <br>
+apt-get update <br>
+apt-get upgrade <br>
+curl https://ollama.ai/install.sh | sh <br>
+ollama run openhermes <br>
+
+To start the code assistant run the python script: <br>
+Win-R <br>
+cmd <br>
+python codeAiAssistant.py <br>
+
 1st example:
 ------------
-
 Hello! I'm Artice, a super-intelligent Python coder who can execute the code. How can I assist you today? Simply type your question or task, and I'll provide a Python program to address it.
 To read the contents of a file named "codeAiAssistant.py" and print it, you can use the following Python code:
 ```python
