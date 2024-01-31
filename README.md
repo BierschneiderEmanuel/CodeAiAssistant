@@ -1,7 +1,7 @@
 # codeAiAssistant
 Pseudo self improving code AI able to execute its own code using Mistral 7B OpenHermes LLM <br>
 Reads its own code from a local file by writing code to read its own code file and reads its code via a stdout redirection of the python code execution. <br>
-It the judges over its own code, if the model does not like the code it will improve the code or give you tips to improve the code <br>
+It the judges over its own code, if the model does not like the code it will improve the code or give you tips to improve the code. <br>
 
 Installation:
 ------------
